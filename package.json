@@ -1,6 +1,6 @@
 {
   "name": "bofa-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A sample library of components for the Bank of America website.",
   "main": "index.js",
   "scripts": {
