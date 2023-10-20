@@ -1,12 +1,12 @@
 {
   "name": "bofa-components",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A sample library of components for the Bank of America website.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jesse Gardner",
   "license": "ISC"
 }
