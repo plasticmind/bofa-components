@@ -4,9 +4,17 @@
   "description": "A sample library of components for the Bank of America website.",
   "main": "index.js",
   "scripts": {
+    "build": "babel src --out-dir dist --extensions \".js,.jsx\" --copy-files",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Jesse Gardner",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15"
+  }
 }
