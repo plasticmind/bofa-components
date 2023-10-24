@@ -2,7 +2,7 @@
   "name": "bofa-components",
   "version": "0.1.2",
   "description": "A sample library of components for the Bank of America website.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist --extensions \".js,.jsx\" --copy-files",
     "prepublishOnly": "npm run build",
