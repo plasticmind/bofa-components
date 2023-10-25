@@ -1,7 +1,17 @@
+@font-face {
+  font-family: 'PF Centro Sans Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PF Centro Sans Pro Regular'), url('PFCentroSansPro-Reg-subset.woff') format('woff');
+}
+
 .UtilityNav {
   background-color: #F2F2F2;
   margin: 0 auto;
+  font-family:'PF Centro Sans Pro Regular', Arial, Helvetica, sans-serif;
+  font-weight:normal;
 }
+
 .UtilityNav ul {
   font-size: 14px;
   display: flex;
