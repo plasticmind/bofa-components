@@ -1,16 +1,28 @@
 import React from 'react';
 import './UtilityNav.css';
 
-function UtilityNav() {
+function UtilityNav({ activeItem }) {
+  const links = [
+    { name: 'Personal', url: 'https://example.com' },
+    { name: 'Small Business', url: 'https://business.example.com' },
+    { name: 'Wealth Management', url: 'https://wealth.example.com' },
+    { name: 'Businesses & Institutions', url: 'https://business.example.com' },
+    { name: 'Security', url: 'https://security.example.com' },
+    { name: 'About', url: 'https://about.example.com' },
+  ];
+
   return (
     <nav className="UtilityNav" role="navigation" aria-label="Top Menu">
       <ul className="UtilityNav-menu" role="menu">
-        <li className="UtilityNav-item" role="menuitem"><a href="https://example.com">Personal</a></li>
-        <li className="UtilityNav-item" role="menuitem"><a href="https://business.example.com">Small Business</a></li>
-        <li className="UtilityNav-item" role="menuitem"><a href="https://wealth.example.com">Wealth Management</a></li>
-        <li className="UtilityNav-item" role="menuitem"><a href="https://business.example.com">Businesses & Institutions</a></li>
-        <li className="UtilityNav-item" role="menuitem"><a href="https://security.example.com">Security</a></li>
-        <li className="UtilityNav-item" role="menuitem"><a href="https://about.example.com">About</a></li>
+        {links.map((link, index) => (
+          <li 
+            key={index} 
+            className={`UtilityNav-item ${link.name === activeItem ? 'active' : ''}`} 
+            role="menuitem"
+          >
+            <a href={link.url}>{link.name}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
