@@ -2,7 +2,7 @@
   font-family: 'PF Centro Sans Pro Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('PF Centro Sans Pro Regular'), url('PFCentroSansPro-Reg-subset.woff') format('woff');
+  src: local('PF Centro Sans Pro Regular'), url('../assets/PFCentroSansPro-Reg-subset.woff') format('woff');
 }
 
 .UtilityNav {

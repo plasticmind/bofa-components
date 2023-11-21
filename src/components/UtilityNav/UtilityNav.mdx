@@ -1,0 +1,40 @@
+{/* UtilityNav.mdx */}
+
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as UtilityNavStories from './UtilityNav.stories';
+
+<Meta of={UtilityNavStories} />
+
+# UtilityNav
+
+The `UtilityNav` component is a horizontal navigation bar that lists out and links to major products or sections within an organization.
+
+## ActiveItem
+
+Links are styled with an underlined on `:hover` and `:focus` interactions. 
+
+The `UtilityNav` supports setting one of the links as the `ActiveItem` to indicate the current product within the list of products, though none of them are underlined by default:
+
+<Canvas of={UtilityNavStories.Default} />
+
+To activate a link, add the `activeItem` prop to the `UtilityNav.Link` component and pass it the value of the `UtilityNav.Item` component that should be active. 
+
+For example:
+
+```jsx
+<UtilityNav activeItem="Personal">
+```
+
+Activates the `Personal` link:
+
+<Canvas of={UtilityNavStories.Active} />
+
+## Accessibility
+
+The `UtilityNav` component is built with accessibility in mind. It uses the `aria-label` attribute to provide a label for assistive technologies. It also uses the `aria-current` attribute to indicate when a product in the list is set to the `activeState`.
+
+## Todo
+
+- Bar should collapse at smaller breakpoints
+- Allow for custom CTA in right side of bar

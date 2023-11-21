@@ -20,7 +20,12 @@ function UtilityNav({ activeItem }) {
             className={`UtilityNav-item ${link.name === activeItem ? 'active' : ''}`} 
             role="menuitem"
           >
-            <a href={link.url}>{link.name}</a>
+            <a 
+              href={link.url} 
+              aria-current={link.name === activeItem ? 'page' : undefined}
+            >
+              {link.name}
+            </a>
           </li>
         ))}
       </ul>

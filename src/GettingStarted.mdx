@@ -1,0 +1,49 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Getting Started" />
+
+# Bank of America: Component Library
+
+The BofA Component Library is a collection of shared React components that can be used to build BofA applications. Currently, this library contains only a single component, but we're actively looking for more shared patterns that make sense to include here.
+
+This library is built for web-based BofA applications using React. It is not intended for use in native applications, or for use in non-BofA applications.
+
+⚠️ **Warning: This library is not officially endorsed by Bank of America.** It was built as [part of a training series for design systems designers and developers](https://practicaldesignsystems.com/daily/let-s-build-a-design-system/). It's not meant to be used in real applications.
+
+## Installation
+
+To use the BofA Component Library in your project, first install it into your project via npm:
+
+```bash
+npm install bofa-components
+```
+
+## Importing
+
+Once you've installed the component library into your project, you'll need to import the component you want to use into your application. For example, if you want to use the `UtilityNav` component, you can import it by adding the following line near the top of your application:
+
+```jsx
+import { UtilityNav } from 'bofa-components';
+```
+Then you can place the component into your application page:
+
+```jsx
+<UtilityNav activeItem="Small Business"/>
+```
+
+## Contributing
+
+If you have an idea for a component that's shared across BofA applications that would benefit from being centralized, please [create an issue on the official GitHub repository](https://github.com/plasticmind/bofa-components/issues/) and make the case. Someone from our team will follow up within 24 hours. If it's a good fit, we'll either add it to the library or ask you to contribute code in a pull request:
+
+1. [Fork this repository](https://github.com/plasticmind/bofa-components)
+2. Commit your changes
+3. Submit a pull request and link to that PR in your issue
+
+## Questions
+
+If you have any questions or feedback, please [file an issue on the official GitHub repository](https://github.com/plasticmind/bofa-components/issues/), and follow up within 24 hours.
+
+## Related Links
+
+- [BofA Component Library — GitHub repo](https://github.com/plasticmind/bofa-components)
+- [BofA Component Library — npm package](https://www.npmjs.com/package/bofa-components)
