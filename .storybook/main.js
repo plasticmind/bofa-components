@@ -6,7 +6,8 @@ const config = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
-    "@storybook/addon-designs"
+    "@storybook/addon-designs",
+    "@storybook/addon-mdx-gfm"
   ],
   framework: {
     name: "@storybook/react-webpack5",
